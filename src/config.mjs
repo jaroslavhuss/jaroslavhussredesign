@@ -1,23 +1,23 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'jaroslavhuss.cz',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://jaroslavhuss.cz',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Web o programatickém marketingu - Jaroslav Huss',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'Vítejte na webu Jaroslava Husse, který se týká hlavně programatického marketingu - programování, wordpress, javascript, adwords, google analytics a další.',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'light:only', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
+  language: 'cs',
   textDirection: 'ltr',
 
-  dateFormatter: new Intl.DateTimeFormat('en', {
+  dateFormatter: new Intl.DateTimeFormat('cs', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
@@ -32,26 +32,26 @@ const CONFIG = {
     postsPerPage: 4,
 
     post: {
-      permalink: '/%slug%', // Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/%year%/%month%/%day%/%slug%', // Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       noindex: false,
       disabled: false,
     },
 
     list: {
-      pathname: 'blog', // Blog main path, you can change this to "articles" (/articles)
+      pathname: 'clanky', // Blog main path, you can change this to "articles" (/articles)
       noindex: false,
       disabled: false,
     },
 
     category: {
-      pathname: 'category', // Category main path /category/some-category
-      noindex: true,
+      pathname: 'kategorie', // Category main path /category/some-category
+      noindex: false,
       disabled: false,
     },
 
     tag: {
-      pathname: 'tag', // Tag main path /tag/some-tag
-      noindex: true,
+      pathname: 'tagy', // Tag main path /tag/some-tag
+      noindex: false,
       disabled: false,
     },
   },

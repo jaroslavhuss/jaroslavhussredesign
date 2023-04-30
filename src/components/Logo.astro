@@ -1,6 +1,11 @@
 ---
+import Logo from "../assets/images/jaroslav-huss-programaticky-marketing-oficialni-logo.png"
+import { Image } from "@astrojs/image/components";
 ---
 
-<span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 AstroWind</span
->
+<Image 
+  src={Logo}
+  alt="Oficiální logo webu Jaroslav Huss - jedná se o logo složené z binární soutavy, které opravdu znamená Jaroslav Huss"
+  width={50}
+  height={50}
+/>
