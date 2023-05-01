@@ -15,7 +15,11 @@ export const headerData = {
       links: [
         {
           text: 'Základní kurz online marketingu',
-          href: getPermalink('/landing/saas'),
+          href: getPermalink('/zakladni-kurz-online-marketingu'),
+        },
+        {
+          text: 'Rozdíl mezi tradičním marketingem a digitálním marketingem',
+          href: getPermalink('/zakladni-kurz-online-marketingu/rozdil-mezi-tradicnim-marketingem-a-digitalnim-marketingem'),
         },
       ],
     },
