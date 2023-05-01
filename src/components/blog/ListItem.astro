@@ -52,7 +52,7 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
               <>
                 {' '}
                 ·{' '}
-                <a class="capitalize hover:underline" href={getPermalink(post.category, 'category')}>
+                <a class="capitalize hover:underline p-1 bg-slate-400 rounded-sm" href={getPermalink(post.category, 'category')}>
                   {post.category.replaceAll('-', ' ')}
                 </a>
               </>
@@ -75,6 +75,8 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
 
     {post.excerpt && <p class="flex-grow text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>}
     <footer class="mt-5">
+      <strong>Tagy/rubriky: </strong>
+      
       <PostTags tags={post.tags} />
     </footer>
   </div>
