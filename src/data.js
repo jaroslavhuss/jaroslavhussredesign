@@ -39,6 +39,14 @@ export const headerData = {
           href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-jak-spravne-vyjadrit-svuj-zamer-v-obsahu/'),
         },
         {
+          text: 'Správa komunity a tvorba obsahové strategie',
+          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-sprava-komunity-a-tvorba-obsahove-strategie'),
+        },
+        {
+          text: 'Obsahový marketing – typy obsahu',
+          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-typy-obsahu'),
+        },
+        {
           text: 'Online marketing – slovník pojmů',
           href: getPermalink('/online-marketing-slovnik-pojmu'),
         },
