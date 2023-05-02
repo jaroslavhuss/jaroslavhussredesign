@@ -1,0 +1,151 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from '~/config.mjs';
+import Integrace from '~/assets/images/components/PrincipMarketTrojky/Integrace.astro';
+import Opakovani from '~/assets/images/components/PrincipMarketTrojky/Opakovani.astro';
+import Zahajeni from '~/assets/images/components/PrincipMarketTrojky/Zahajeni.astro';
+const meta = {
+  title: 'Princip marketingové trojky – zahájení, integrace a opakování - ' + SITE.name,
+  description:
+    'V této lekci si vysvětlíme, jak funguje princip marketingové trojky. Vysvětlíme si jeho dílčí části - zahájení, integrace a opakování.',
+  dontUseTitleTemplate: true,
+};
+---
+
+<style>
+  p {
+    margin: 10px 0px !important;
+  }
+</style>
+<Layout meta={meta}>
+  <main class="mx-auto max-w-3xl my-2 py-2">
+    <h1
+      class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-center py-4 my-4"
+    >
+      Princip marketingové trojky – zahájení, integrace a opakování
+    </h1>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Zahájení
+    </h2>
+
+    <Zahajeni />
+
+    <ul class="list-disc px-5 my-5">
+      <li>Zákazník je počáteční (ale i koncový) bod&nbsp;</li>
+      <li>Co zákazník ve skutečnosti chce?</li><li>
+        Kdo je náš zákazník?
+        <ul><li>Co ho zajímá?&nbsp;</li><li>Jaké další produkty už může používat?</li></ul>
+      </li><li>
+        Jak zákazník chce, abychom s ním komunikovali (<em
+          >o tomhle bodu se ještě budeme bavit v pozdějí lekci, protože úzce souvisí se strategií, jak správně
+          identifikovat našeho zákazníka</em
+        >).
+      </li><li>Jaké mám překážky, abychom se k zákazníkovi dostali?&nbsp;</li>
+    </ul>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Opakování
+    </h2>
+
+    <p>
+      Dílčí část marketingové trojky <strong>opakování</strong> je jedna z nejdůležitějších a nejzábavnějších.&nbsp;U této
+      dílčí části opravdu doporučuji vše bedlivě sledovat - dokumentovat to co mi fungovalo i to co mi nefungovalo.
+    </p>
+
+    <Opakovani />
+
+    <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >A proč je to tak zábavné?&nbsp;</h3>
+
+    <ul class="list-disc px-5 my-5">
+      <li>Už máte reálná data o chování zákazníka</li><li>
+        Jste "nuceni" se hrabat v datech a díky tomu hledat nové cesty a příležitosti
+      </li><li>Jste zkrátka marketingový detektiv.</li><li>
+        Budete dělat <strong><a href="/online-marketing-slovnik-pojmu/#abtestovani">AB testování</a></strong>, což je
+        jedna z nejzábavnějších činností marketingu.
+      </li>
+    </ul>
+
+    <h4
+    class="text-lg md:text-md font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  ><strong>Například:</strong></h4>
+
+    <p>
+      Mám emailingovou databázi klientů a můj mailový systém mi umožňuje nejenom kontrolovat <a
+        href="/online-marketing-slovnik-pojmu/#metrika/">základní metriky</a
+      > (bounce rate, open rate, click through rate), ale i další věci:
+    </p>
+
+    <ul class="list-disc px-5 my-5">
+      <li>Kolik času strávil čtením emailu</li><li>Na jaký poslední odkaz klikl</li><li>V kolik email otevřel</li><li>
+        A mnoho dalšího
+      </li>
+    </ul>
+
+    <p>
+      Na základě těchto dat víme, že další email mu můžeme poslat ve stejný čas, jako ten předchozí. A víme, že ze
+      strukturovaného emailu se mu nejvíce líbila ta část o novém mobilním telefonu. Takže další emailá kampaň by mohl
+      být soustředěna právě na tyto lidi, protože jejich zájem vám sámi uživatelé prozradili.&nbsp;
+    </p>
+
+    <h4><strong>Nebo:</strong></h4>
+
+    <p>
+      Poslali jste email na svou databázi, která čítá 1000 zákazníků. Z toho email ale neotevřelo 400 zákazníků. Počkáte
+      pár dnů, upravíte pre-header a předmět emailu a jinak ten samý email pošlete znovu, ale již jen na těch 400
+      zákazníků. Dle toho se pak můžete dál rozhodovat <strong>a hlavně učit a znát vaše publikum.&nbsp;</strong>
+    </p>
+
+    <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Na co se tedy ptáme v části opakování?</h3>
+
+    <ul class="list-disc px-5 my-5">
+      <li>Jak zákazník reagoval na naši marketingovou zprávu?</li><li>
+        Vybrali jsme správný nástroj nebo kanál ke komunikaci?
+      </li><li>Vybrali jsme vůbec správné zacílení?</li><li>
+        Vybrali jsme správné umístění komunikace tak, aby to zákazníka zaujalo?
+      </li><li>Dokáže se naše kampaň odlišit od té konkurenční?</li><li>
+        Je naše marketingová zpráva dostatečně jasná tak, aby vyvolala reakci zákazníka?
+      </li><li>Je naše volba klíčových slov v samotném obsahu dostatečně jasná?</li>
+    </ul>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Integrace
+    </h2>
+
+    <Integrace />
+
+    <p>
+      Dílčí část integrace je spíše takovou dokumentací vaší strategie. <strong>V prvé řadě</strong>, pokud neděláte
+      sami na sebe, tak musíte svou strategii nejdříve umět prodat svému zaměstnavateli/manažerovi nebo svému klientovi.
+      Dost často se z vaší pečlivě navrhnuté strategie stane guláš, neboť se vám do toho každý bude chtít nějakým
+      způsobem nacpat.&nbsp;A to nesmíte dovolit nebo si strategii nastavit tak, aby se vám guláš z toho nestal.
+    </p>
+
+    <p>
+      <strong>V druhé řadě</strong> se budete muset naučit jednu zásadní věc - <strong>každá strategie</strong> musí být
+      <strong>dobře škálovatelná</strong>. To znamená, že v každé části vaší strategie musí být prostor pro změnu a
+      rozšíření.&nbsp;
+    </p>
+
+    <p>
+      Zmiňoval jsem v dílčí části <strong>opakování</strong>, že je potřeba hodně AB testovat, analyzovat a zkoumat -
+      hledat špatně fungující kampaně, špatně fungující chování uživatele a také naopak identifikovat to, co vám funguje
+      nejlépe.
+    </p>
+
+    <p>
+      A to musí být zpět integrováno do strategie - proto jsem psal, že strategie musí být rozšiřitelná - doslova
+      natahovácí.
+    </p>
+  </main>
+</Layout>

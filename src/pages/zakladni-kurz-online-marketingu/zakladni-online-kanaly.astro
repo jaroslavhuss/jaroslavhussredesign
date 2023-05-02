@@ -1,0 +1,368 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import { SITE } from '~/config.mjs';
+import KlicoveSlovo from '~/assets/images/components/kanaly/KlicoveSlovo.astro';
+import Lighthouse from '~/assets/images/components/kanaly/Lighthouse.astro';
+import Organic from '~/assets/images/components/kanaly/KlicoveSlovo.astro';
+
+const meta = {
+  title: 'Základní online kanály - ' + SITE.name,
+  description:
+    'V této lekci se podíváme na email marketing a automatizaci, placené reklamy (ppc), SEO, optimalizace webových stránek a mnoho dalšího. Jedná se o základy.',
+  dontUseTitleTemplate: true,
+};
+---
+
+<style>
+  p {
+    margin: 10px 0px !important;
+  }
+</style>
+<Layout meta={meta}>
+  <main class="mx-auto max-w-3xl my-2 py-2">
+    <h1
+      class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-center py-4 my-4"
+    >
+      Základní online kanály
+    </h1>
+
+    <p>
+      Začneme tím nejdůležitějším - čím větší budete, tím více kanálů a cest budete zkoušet. Ze začátku ale není za
+      každou cenu potřeba, hnát se za všemi kanály - a zpravidla ne všechny kanály budou vyhovovat vašemu typu
+      podnikání.
+    </p>
+
+    <p><strong>Mezi základní online kanály patří:</strong></p>
+
+    <ul class="list-disc px-5 my-5">
+      <li>Email marketing a marketingová automatizace</li><li>Pay-Per-Click (PPC) - platba za kliknutí</li><li>
+        Organické vyhledávání (SEO)
+      </li><li>Optimalizace webové stránky</li><li>Internetová reklama (Display marketing)</li><li>
+        Obsahový marketing
+      </li><li>Marketing na sociálních sítích</li>
+    </ul>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Email marketing a marketingová automatizace
+    </h2>
+
+    <p>
+      Jestli jsem v úvodním perexu zmiňoval, že nebudete muset využívat všechny kanály, tak email marketing s
+      automatizací je výjimka. Je to kanál, který se hodí snad úplně všude a pokud máte vše správně nastavené, jedná se
+      o jeden z nejmocnějších marketingových kanálů.
+    </p>
+
+    <p>
+      Emailing v sérii tohoto kurzu rozeberu opravdu podrobně - od nastavení serveru, po komplexní email marketingovou
+      strategii až k samotné automatizaci.
+    </p>
+
+      <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Jen na okraj tedy - co je email marketing a co email marketing není?</h3>
+
+    <p>
+      Email marketing je v dnešní době marketingová zpráva, jejíž snahou je být co nejvíce ušitá na konkrétního
+      zákazníka. Je to zpráva, která vychází z dlouhodobě sbíraných dat o zákazníkovi. Je to prostředek, jež nám buduje
+      úzký vztah s konkrétním zákazníkem a pomáhá nám budovat s ním důvěru. Je to zkrátka marketingový kanál, který když
+      se dělá opravdu správně, jeho konverzní poměr je extrémně vysoký.
+    </p>
+
+    <p>
+      Email marketing není hromadná zasílka na zakoupené databáze. Email marketing není spása vašeho podnikání. Email
+      marketing má bohužel v rukou nezkušeného nebo nepoctivého marketéra skolony, přejít k čistokrevnému spamu. V rukou
+      nepoctivce se z tohoto kanálu stává obtěžující nemoc, která kazí nám, poctivým marketérům, dobrou pověst.
+    </p>
+
+      <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Marketingová Automatizace</h3>
+
+    <p>Pojem marketingová automatizace má hodně podob. Uvažujte o marketingové automatizaci zhruba asi takhle:</p>
+
+    <ul class="list-disc px-5 my-5">
+      <li>
+        Nový zákazník se přihlásí k odběru vašich marketingových zpráv <ul class="list-disc px-5 my-5">
+          <li>Automatizovaně mu přijde welcome email</li><li>
+            Systém si zapamatuje, jak se zákazník jmenuje, kolik mu je, kdy se narodil atd. <ul
+              class="list-disc px-5 my-5"
+            >
+              <li>Systém připraví svátkovou kampaň</li><li>Systém připraví narozeninovou kampaň</li><li>
+                Systém připraví správné oslovení
+              </li>
+            </ul>
+          </li><li>
+            Systém hlídá, zda si zákazník welcome email přečetl, pokud ne, čeká 24 hodin a pak pošle připomínku, že
+            zákazník neprošel uvítací zprávou a není tedy možné dokončit proces registrace.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>A na tohle by se dalo nabalovat a nabalovat.</p>
+
+    <h4>Marketingová automatizace není jen o email marketingu</h4>
+
+    <p>
+      Marketingová automatizace může ale být i na straně samotného webu (a nejenom tam). Dejme tomu, že máte systémově
+      nastavné sledování uživatele na webu. Máte nastavené speciální podmínky, který když jsou během jeho návštěvy na
+      webu splněné, tak se spustí nějaká kampaň.
+    </p>
+
+    <p><strong>Například:</strong></p>
+
+    <p>
+      Zákazník nakupuje na našem e-shopu a v košíku má 5 produktů. Nicméně během procesu zaplacení došlo k přerušení
+      činnosti a nedošlo k transakci. Spustí se tedy sada spouštěčů této kampaně:
+    </p>
+
+    <ul class="list-disc px-5 my-5">
+      <li>
+        Když je zákazník stále na webu, ale došlo k přerušení zaplacení, vyskočí mu na aktuálně prohlížené stránce
+        hláška o nedokončeném nákupu
+      </li><li>Pokud je hláška ignorována, vyskočí slevna 5% na dokončení nákupu</li><li>
+        Pokud zákazník už na webu není, ale byl to registrovaný zákazník, odešle se mu po dvou hodinách upomínkový
+        email, že mu něco zůstalo v košíku a zda mu to náhodou nechybí.
+      </li>
+    </ul>
+
+    <p>Opět - automatizace má nekonečné možnosti.</p>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Platba za kliknutí - Pay-Per-Click (PPC)
+    </h2>
+
+    <p>
+      Představte si, že jste prodejce mobilních telefonů a máte okolo sebe ohromnou konkurenci. Jak tedy být vidět více,
+      než ti ostatní? Opovědí je (mimo jiné) platba za kliknutí.
+    </p>
+
+    <p>
+      Tato forma přihazování je v dnešní době masově mezi marketéry oblíbená. Jako e-shop potřebujete být na prvních
+      stránkách vyhledávání, ale konkurence je tak silná nebo je vaše SEO tak slabé, že se tam nemáte šanci dostat.
+      Odpovědí je platba za kliknutí.
+    </p>
+
+    <p>Pojďme si vygooglit klíčové slovo "krmivo pro psa".</p>
+
+    <KlicoveSlovo />
+
+    <p>Řekněme, že teď kliknu na druhý odkaz stránky max4dog. Co se stane?</p>
+
+    <ul class="list-disc px-5 my-5">
+      <li>Budu přesměrován na vstupní stránku prodejce</li><li>
+        Prodejci se z účtu automaticky odečte určitá částka, protože jsem já, jako zákazník, byl díky placenému
+        vyhledávání přiveden na jeho web.
+      </li>
+    </ul>
+
+    <p>
+      Jak je z obrázku vidět, použil jsem vyhledávač Google, ktrý nabízí PPC službu <a
+        rel="noreferrer noopener"
+        aria-label="jménem Google Ads (otevře se na nové záložce)"
+        href="https://ads.google.com"
+        target="_blank"><strong>jménem Google Ads</strong></a
+      >. V Česku má Seznam.cz obdobnou službu - jmenuje se <a href="https://www.sklik.cz/"><strong>Sklik</strong></a>.
+      Ale může to být placená reklama i na Facebooku, Pinterestu a tak dále.
+    </p>
+
+    <p>
+      Princpem je zkrátka nastavit <strong>maximální cenu za proklik,</strong> který jste ochotni zaplatit, nastavit si klíčová
+      slova, na které se chcete zobrazovat a pak optimalizovat, optimalizovat a ještě jednou optimalizovat.
+    </p>
+
+    <p>
+      Výhodou (alespoň o Googlu) je v dnešní době fakt, že spoustu složitých věcí už dělá Google za vás díky algoritmu
+      strojového učení (machine learning). Občas se žertuje, že "<em>Pépécéčkář nebude mít brzy co žrát</em>", ale od
+      toho jsme tuším stále opravdu daleko.
+    </p>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Organické vyhledávání (SEO)
+    </h2>
+
+    <p>
+      Organické vyhledávání (neboli SEO - Search Engine Optimization) je dle mého názoru nejnáročnější a nejkomplexnější
+      kanál v online marketingu. Zde na webu se mu budu věnovat opravdu hodně podrobně, takze zde, v této sekci se budu
+      snažit jen vysvětlit, co SEO je a proč je vlastně tak strašně složité.
+    </p>
+
+    <p>
+      SEO je v největší jednoduchosti snaha o to, být ve vyhledávačích co nejvýše. Řekněme, že budu hledat klíčové slovo
+      "nejlepší telefon na světě". Schválně - otevřete si <a href="https://www.google.com/"
+        ><strong>google.com</strong></a
+      > a vyhledejte "nejlepší telefon na světě".
+    </p>
+
+    <Organic />
+
+    <p>Tak pojďme hezky od začátku</p>
+
+    <ol>
+      <li>Do vyhledávacího pole jsme zadali klíčové slovo "nejlepší telefon na světě"</li><li>
+        Google na základně tisíce vlastnosti vyhodnotí, jakou webovou stránku vám naservíruje na první místo, na druhé
+        místo atd.
+      </li><li>Zároveň vám ještě před výsledky předsune tzv. featured snippets, jež mají nejvyšší proklikovost.</li>
+    </ol>
+
+      <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Jak to, že se dostal web "vas-pomocnik.cz" na první místo?</h3>
+
+    <p>
+      Jednoduchá odpověď je taková, že tomuto webu Google věří nejvíce - myslí si o tomto webu, že má přesně ten pravý
+      obsah, který hledáme.
+    </p>
+
+    <h4>Jak to, že vidím jiný web, Jardo, než ty?</h4>
+
+    <p>
+      Google personalisuje a to co se zobrazí mně, se nemusí zobrazit vám. Google o mně ví, že je mi 29 let, že jsem
+      muž, že jsem blázen do programování a digitálního marketingu a Google zná historii mého hledání. Na základě toho
+      se snaží Google vybrat nejlepší stránku pro mě konkrétního.
+    </p>
+
+    <p>
+      Zároveň, pokud se na tento článek díváte například týden od vydání, tak je dost možné, že Google opět zase něco v
+      SEO změnil a web už nepovažuje za tolik dobrý.
+    </p>
+
+    <p>
+      SEO se zkrátka pořád a stále mění a je tak složité, že až ho budeme společně probírat, připravte si sud kafe,
+      protože to bude nářez.
+    </p>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Optimalizace webových stránek
+    </h2>
+
+    <p>
+      Optimalizace webových stránek úzce souvisí se výše zmíněném organickém vyhledáváním (SEO). Je to další z částí,
+      která změstnává spoustu specialistů a je tak strašně komplexní, že udělat opravdu dobře odchytaný a odladěný web
+      trvá měsíce a stojí opravdu hodně peněz.
+    </p>
+
+    <p>
+      Abych vám co nejvíce přiblíž, oč běží, pojďme otestovat můj web - jaroslavhuss.local. (alespoň se přesvědčíte o
+      tom, jak kovářova kobyla chodí úplně bosa).
+    </p>
+
+    <ol>
+      <li>Zkopírujte si odkaz <a href="https://jaroslavhuss.cz/">https://jaroslavhuss.cz/</a></li><li>
+        Přejděte na stránku <a href="https://developers.google.com/speed/pagespeed/insights/?hl=cs"
+          >https://developers.google.com/speed/pagespeed/insights/?hl=cs</a
+        >
+      </li><li>Do vyhledávacího pole zadejte odkaz na můj web</li><li>A klikněte na tlačítko analyzovat</li>
+    </ol>
+
+      <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Žádná sláva, co?</h3>
+
+    <Lighthouse />
+
+    <p>
+      Skóre 43/100 na telefonech je opravdu bída, vím o tom a až budu mít někdy čas (to bych pořád nesměl psát články),
+      určitě se pustím do optimalizace webu.
+    </p>
+
+    <p>
+      Výhodou pagespeedinsights od googlu je to, že vám napíše i věci, co se Googlu na vaše webu nelíbí. Nevýhodou je,
+      že se jedná o základní nástroj měření rychlosti webu a jeho výkon. Osobně používám něco jiného, ale pro
+      jednoduchos a základní orientaci jsou pagespeeds dobrý nástrojem.
+    </p>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Internetová reklama - Display Advertising
+    </h2>
+
+    <p>
+      Internetová reklema neboli obecně nazývaná display advertising je oblíbenou (leč dle mého názoru ne tolik
+      efektivní) formou online propagace.
+    </p>
+
+    <p>
+      Osobně používám display reklamu jen v případě, kdy potřebuji sířit povědomí o novém produktu nebo značce - tzv.
+      brand awarness. Zpravidla se jedná o:
+    </p>
+
+    <ul class="list-disc px-5 my-5">
+      <li>kampaně ve vyhledávací síti (když si něco "googlíte)</li><li>
+        kampaně v obsahové síti (když prohlížíte například můj web a zobrazují se vám reklamy)
+      </li><li>
+        a různé další reklamní plochy - například v Gmailu můžete vidět display reklamy nebo ve vaší oblíbené aplikaci.
+      </li>
+    </ul>
+
+    <p class="has-text-align-center has-very-light-gray-background-color has-background">
+      <strong>Když už jsme u toho, pokud mi chcete přispět korunou na pivo, vypněte si adblocker</strong>. Alespoň se
+      můžete inspirovat, jak dělají ostatní display advertising a jak to hlavně vypadá. Díky :p
+    </p>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Obsahový marketing - tvorba obsahu
+    </h2>
+
+    <p>
+      Přetěžká část marketingu. Vždycky když tuním klientovi SEO, říkám si, že lidé, který se živí tvorbou obsahu, mají
+      opravdu složitou práci.
+    </p>
+
+    <p>V dnešní době vyhrávají v tvorbě obsahu dvě věci.</p>
+
+      <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Článek je opravdu hodně kvalitní</h3>
+
+    <p>
+      Článek musí odpovědět přesně na otázku čtenáře. Musí být tak strašně čitelný a čtivý, aby udržel návštěvníkovo
+      pozornost. Přijde vám to jednoduché? Není, opravdu ne.
+    </p>
+
+      <h3
+    class="text-xl md:text-lg font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+  >Článek je v souladu se SEO</h3>
+
+    <p>
+      Vedle toho, že musíte umět perfektně psát, musíte znát i principu obsahu z hlediska SEO, což je další celkem
+      složitá věc. A protože se SEO pořád mění a je v dnešní době hodně nevyzpytatelné, může se stát, že se vámi napsaný
+      článek na Googlu vůbec nechytne.
+    </p>
+
+    <h2
+      class="text-3xl md:text-2xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 text-left py-1 my-2"
+    >
+      Marketing na sociálních sítích
+    </h2>
+
+    <p>
+      Těžko si dnes představit marketing bez sociálních sítích. Věděli jste, že třeba takový Youtube je druhý největší
+      vyhledávač na světě? Například hledáte oblíbený recept na krůží maso - dost často se stává, že lidé jdou rovnou na
+      Youtube a hledají nejlepší recept.
+    </p>
+
+    <p>To platí i o sociálních sítích. Vezměme notoricky známý Facebook.</p>
+
+    <p>
+      Facebook vám dovolí založit si vlastní stránku pro fanoušky nebo skupinu. Takže na Facebooku také platí pravidla
+      organického vyhledávání a určitě se vyplatí nějakou tu stránku mít a spravovat jí.
+    </p>
+
+    <p>
+      Navíc vám sociální sítě umožní opravdu dobře cílit na uživatele - na základě jejich zájmů, chování, věku, pohlaví
+      a tak dále. Google to umí také skvěle, ale sociální sítě mají opravdu dobrý zásah.
+    </p>
+  </main>
+</Layout>

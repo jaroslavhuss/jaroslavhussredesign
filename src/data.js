@@ -17,9 +17,22 @@ export const headerData = {
           text: 'Základní kurz online marketingu',
           href: getPermalink('/zakladni-kurz-online-marketingu'),
         },
+        
         {
           text: 'Rozdíl mezi tradičním marketingem a digitálním marketingem',
           href: getPermalink('/zakladni-kurz-online-marketingu/rozdil-mezi-tradicnim-marketingem-a-digitalnim-marketingem'),
+        },
+        {
+          text: 'Princip marketingové trojky – zahájení, integrace a opakování',
+          href: getPermalink('/zakladni-kurz-online-marketingu/princip-marketingove-trojky-zahajeni-integrace-a-opakovani'),
+        },
+        {
+          text: 'Základní online kanály',
+          href: getPermalink('/zakladni-kurz-online-marketingu/zakladni-online-kanaly/'),
+        },
+        {
+          text: 'Online marketing – slovník pojmů',
+          href: getPermalink('/online-marketing-slovnik-pojmu'),
         },
       ],
     },
