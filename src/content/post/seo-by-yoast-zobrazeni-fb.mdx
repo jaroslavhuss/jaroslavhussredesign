@@ -1,0 +1,81 @@
+---
+publishDate: 2017-03-13T15:50:50+01:00
+title: SEO by Yoast na FB
+excerpt: Koupit MacBook Air 2020 s M1 Chipem nebo nekoupit? Po přečtení mojí osobní recenze poběžíte pro tento naprosto dokonalý stroj bez váhání.
+image: ~/assets/images/srovnani-macbook-2017-a-macbook-air-M1.jpg
+category: onlmarket
+readingTime: 3200
+tags:
+  - Digitální marketing
+  - SEO
+  - YOAST
+---
+import A1 from '~/assets/images/posts/A1.astro';
+import A2 from '~/assets/images/posts/A2.astro';
+import A3 from '~/assets/images/posts/A3.astro';
+import A4 from '~/assets/images/posts/A4.astro';
+import A5 from '~/assets/images/posts/A5.astro';
+
+Napsali jste příspěvek nebo vyloženě připravili landing page (nemluvě o Home Page atd.) a chcete, aby se vám stránka **správně zobrazovala při sdílení na facebooku**. Nevěřili byste, kolik lidí na způsob správného nastavení kašle a přitom je to tak jednoduché. Proto dneska ukážu, jak nastavit SEO by Yoast tak, aby se při sdílení **vše zobrazovalo** tak, jak má.
+
+Jdeme na to
+-----------
+
+Pod každým příspěvkem nebo stránkou, pokud máte Yoast nainstalovaný, můžete vidět jednoduchou konfiguraci. Nebudu se zabývat dnes ničím jiným, **než sekcí se sociální sítí Facebook**, protože je to právě tahle sekce, která dělá **drtivé většině problémy.**
+
+<A3 />
+
+V záložce můžete vidět **jednoduchá pole** pro nastavení – FB title, popis a obrázek.
+
+### SEO by Yoast – Titulek
+
+V mém případě si trošku pozměním titulek pro FB, takže nebude úplně korespondovat s tím, jak ho mám ve WordPressu. Proč? Protože chci mít na FB více popisný titulek, který si ve WordPressu nemůžu dovolit (mám to tak prozatím nakódované).
+
+Titulek bude – „**Jak vyzrát při sdílení webu na Facebooku pomocí pluginu Seo By Yoast**“
+
+### Seo by yoast – popis
+
+U popisu se budu snažit hlavně klást důraz na první dvě věty, kde vysvětluji, co čtenáře čeká po prokliku. FB popis bude tento:
+
+„***Sdílíte určitou stránku nebo příspěvek na Facebooku, ale náhledový obrázek se vám nechce zobrazit nebo se zobrazuje starý? Či popisek k webu není aktuální? Celý problém vězí ve Facebook debugeru.***“
+
+### Seo by Yoast – obrázek
+
+Pro obrázek do SEO by Yoast používám rozměry **1200×630**. A obrázek nahraji v Yoastu.
+
+<A5 />
+
+Ten samý obrázek ještě zmenším na 100px x něco, abych měl i náhledový obrázek. Obrázek zmenšuji a ubírám mu na kvalitě, aby měl co nejmenší velikost, jelikož se náhledový obrázek propisuje na homepage a **[google test rychlosti](https://developers.google.com/speed/pagespeed/insights/)** by pak řval, že je obrázek moc veliký.
+
+Kontrola naší práce
+-------------------
+
+Když máme všechno nastavené, můžeme stránku publikovat – tím získáme url, které můžeme již sdílet na Facebooku. Takže stačí otevřít na FB svou zeď a vložit tam link. Následně se vám vše načte a nebo taky ne…
+
+### Když vše nejde, jak má
+
+Po publikaci příspěvku se mi dostalo náhledu, který definitivně nevypadá tak, jak jsem ho v Yoastu definoval. Tohle je přesně to, co určitě nechceme. Co kdyby někdo jiný chtěl sdílet naší stránku (v rámci doporučení třeba) a zobrazilo se tohle?
+
+<A2 />
+
+### Pomoc jménem Facebook Debugger
+
+Pokud jste na stránce **[Facebook Debuggeru](https://developers.facebook.com/tools/debug/)** nikdy nebyli, tak je určitě něco špatně. Po prokliku na debugger uvidíte jednoduchý vstup, do kterého vložíte link na váš příspěvek a kliknete na modré tlačítko „Debug“. Ujistěte se, že je to čistý link a ne WordPress preview (náhledový) příspěvek.
+
+### Pořád to nejde…
+
+Nejdříve mi dovolte ukázat, jak mi debugger zobrazil při prvním pokusu o debugování náhledový post:
+
+<A1 />
+
+Na obrázku můžete vidět, že FB absolutně s klidem ignoroval mnou nadefinovaný obrázek a raději si vzal **kterýkoliv jiný obrázek, který se vyskytuje v příspěvku**. (Kdyby nebyl v příspěvku obrázek, tak si FB stáhne cokoliv ze samotného webu.).
+
+### Je ho potřeba donutit
+
+Vraťte se zpátky na FB debugger a najděte na stránce ne moc dobře viditelné tlačítko „**Scrape again**“ (pro rychlé hledání na stránce použijte ctrl f). A teď už nezbývá nic jiného, než **scrapovat tak dlouho**, dokud se vám správné nastavení nezobrazí. (Jednou jsem musel scrapovat 17x :-)).
+
+### A je hotovo!
+
+Po pár „scrapnutích“ **je práce hotová**!
+
+<A4 />
