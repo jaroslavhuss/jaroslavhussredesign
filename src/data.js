@@ -35,6 +35,10 @@ export const headerData = {
           href: getPermalink('/zakladni-kurz-online-marketingu/metoda-smart/'),
         },
         {
+          text: 'Jak správně vyjádřit svůj záměr v obsahu',
+          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-jak-spravne-vyjadrit-svuj-zamer-v-obsahu/'),
+        },
+        {
           text: 'Online marketing – slovník pojmů',
           href: getPermalink('/online-marketing-slovnik-pojmu'),
         },
