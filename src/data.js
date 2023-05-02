@@ -8,23 +8,52 @@ export const headerData = {
     },
     {
       text: 'Články',
-      href: getBlogPermalink(),
+      links:[
+        {
+          text: 'Všechny články',
+          href: getBlogPermalink('/'),
+        },
+        {
+          text: 'Kodérství',
+          href: getPermalink('/kategorie/koderstvi'),
+        },
+        {
+          text: 'Nezařazené',
+          href: getPermalink('/kategorie/nezarazene'),
+        },
+        {
+          text: 'Online marketing',
+          href: getPermalink('/kategorie/onlmarket'),
+        },
+        {
+          text: 'Osobní',
+          href: getPermalink('/kategorie/osobni'),
+        },
+        {
+          text: 'Wordpress',
+          href: getPermalink('/kategorie/wp'),
+        }
+      ]
     },
     {
       text: 'Online marketing',
       links: [
         {
           text: 'Základní kurz online marketingu',
-          href: getPermalink('/zakladni-kurz-online-marketingu'),
+          href: getPermalink('/zakladni-kurz-online-marketingu/'),
+        },
+        {
+          text: 'Co je digitální marketing a jaké koncepty pod něj spadají',
+          href: getPermalink('/zakladni-kurz-online-marketingu/co-je-digitalni-marketing-a-jake-koncepty-pod-nej-spadaji/'),
         },
         
         {
           text: 'Rozdíl mezi tradičním marketingem a digitálním marketingem',
-          href: getPermalink('/zakladni-kurz-online-marketingu/rozdil-mezi-tradicnim-marketingem-a-digitalnim-marketingem'),
+          href: getPermalink('/zakladni-kurz-online-marketingu/rozdil-mezi-tradicnim-marketingem-a-digitalnim-marketingem/'),
         },
         {
           text: 'Princip marketingové trojky – zahájení, integrace a opakování',
-          href: getPermalink('/zakladni-kurz-online-marketingu/princip-marketingove-trojky-zahajeni-integrace-a-opakovani'),
+          href: getPermalink('/zakladni-kurz-online-marketingu/princip-marketingove-trojky-zahajeni-integrace-a-opakovani/'),
         },
         {
           text: 'Základní online kanály',
@@ -40,21 +69,21 @@ export const headerData = {
         },
         {
           text: 'Správa komunity a tvorba obsahové strategie',
-          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-sprava-komunity-a-tvorba-obsahove-strategie'),
+          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-sprava-komunity-a-tvorba-obsahove-strategie/'),
         },
         {
           text: 'Obsahový marketing – typy obsahu',
-          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-typy-obsahu'),
+          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-typy-obsahu/'),
         },
         {
           text: 'Online marketing – slovník pojmů',
-          href: getPermalink('/online-marketing-slovnik-pojmu'),
+          href: getPermalink('/online-marketing-slovnik-pojmu/'),
         },
       ],
     },
     {
       text:"Jak se naučit programovat",
-      href: getPermalink('/'),
+      href: getPermalink('/jak-se-naucit-programovat-kompletni-kurz-moderniho-programovani/'),
     },
   ],
   actions: [
