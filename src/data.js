@@ -31,6 +31,10 @@ export const headerData = {
           href: getPermalink('/zakladni-kurz-online-marketingu/zakladni-online-kanaly/'),
         },
         {
+          text: 'Metoda Smart',
+          href: getPermalink('/zakladni-kurz-online-marketingu/metoda-smart/'),
+        },
+        {
           text: 'Online marketing – slovník pojmů',
           href: getPermalink('/online-marketing-slovnik-pojmu'),
         },
