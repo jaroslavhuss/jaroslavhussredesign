@@ -1,0 +1,71 @@
+---
+publishDate: 2017-03-14T00:00:00Z
+title: CF7 – číslo objednávky
+excerpt: V dnešním článku si ukážeme, jak vytvořit náhodné číslo (třeba objednávkové číslo) pomocí CF7 formuláře!
+image: ~/assets/images/5-opravdovych-rad-jak-se-naucit-programovat.png
+category: koderstvi
+readingTime: 10
+tags:
+  - programovani
+  - wordpress
+---
+import TrojicePluginu from '~/assets/images/posts/TrojicePluginu.astro'
+import NasazeniKodu from '~/assets/images/posts/NasazeniKodu.astro'
+import ObjednavkaCislo from '~/assets/images/posts/ObjednavkaCislo.astro'
+import TestObjednavky from '~/assets/images/posts/TestObjednavky.astro'
+import PouzitEmail from '~/assets/images/posts/PouzitEmail.astro'
+
+Nepotřebovali jste někdy, aby váš kontaktní formulář při odeslání vygeneroval číslo objednávky, které by zaslal vám, uživateli a ještě ho uložil do databáze? Existuje jednoduchý způsob, jak Contact Form 7 nechat generovat náhodné číslo!
+
+Než ale začnu psát přesný postup, rád bych upozornil, že tohle řešení není úplně čistá práce a správné řešení by nemělo ani jít skrze CF7, jenže drtivá většina používá CF7 a je na tento plugin zvyklá, takže se musím přizpůsobit.
+
+## Co všechno potřebujeme?
+
+- Contact Form 7 plugin (Asi nejpoužívanější kontaktní formulář ve WP)
+- Contact Form 7 DB (Veškeré submity CF7 formu se ukládají do tohoto pluginu, nedá se stáhnout skrze WP pluginy, musí se stáhnout z gitu nebo si ho můžete stáhnout zde)
+- Contact Form 7 - Dynamic Text Extension (Plugin, který umožní nasadit do CF7 dynamické proměnné)
+- Přístup do FTP nebo administrátorská práva (Budeme trošku šahat do kódu šablony - nezapomeňte si udělat zálohu!)
+- Kód, který generuje objednávkové číslo (Implementace této funkce zajistí generování náhodných čísel)
+
+<TrojicePluginu />
+
+## Jdeme zase na to!
+
+- Ve WP administraci najedeme na vzhled (1.) a klikneme na "editor"(2.). Zde nalezneme function.php nebo také "Theme Function" (3.). Poscrollujeme až úplně dolů, kde vytvoříme php komentář, ve kterém si označíme místo, kde budeme kód implementovat. 
+
+<NasazeniKodu />
+
+- Pod komentář vložíme kód, který jste si mohli stáhnout v části "Co všechno potřebujeme". (Prosím ignorujme teď nutnost child theme, je v plánu další tutoriál). A celou novou změnu uložíme tlačítkem "aktualizovat soubor".
+
+- Vytvoříme si testový kontaktní formulář, které bude obsahovat již předgenerovaná pole (jméno, příjmení, předmět, prostor pro zprávu a submit button). Kdekoliv, kde se nám to hodí, vložíme novou proměnnou "dynamic-text" nebo "dynamic-hidden". Jak názvy prozrazují - dynamic-text rovnou ukáže číslo objednávky a "dynamic-hidden" číslo vygeneruje, ale uživateli ho skryje. Já osobně používám dynamic-hidden. Objednávkové číslo zveřejním až po submitu uživatele, kterému přijde automatický email.
+
+<ObjednavkaCislo/>
+
+- Formulář je připraven, teď už jen správně nastavit email po odeslání, aby se číslo uživateli zobrazilo (nebo taky nemusíte) a práce je hotová!
+
+- Půjdeme tedy znovu do pluginu a ze čtyř záložek (Formulář, Email, Zprávy, Další nastavení) zvolíme záložku Email! Poscrollujeme opět až nakonec a zaškrtneme blbě viditelný check button "Použít E-mail (2)"! 
+<PouzitEmail />
+- **Rozbalí se nám druhé nastavení emailu**, které budeme směřovat na uživatele, který formulář submitnul.
+
+<TestObjednavky/>
+
+A je to hotové! Teď by se vám vše mělo ukládat do databáze a zároveň by měly chodit emaily s číslem objednávky zákazníkům.
+
+## Malé vysvětlení kódu
+### Proměnná length
+
+Pokud máte před sebou kód, který generuje číslo objednávky, možná si říkáte, že vám 8 míst pro číslo nestačí. Že byste chtěli generovat mnohem více!
+
+Pak není nic snazšího, než hodnotu proměnné "length" zvětšit na požadovanou velikost. Takže pokud chcete 15 čísel - stačí do Length nacpat číslo 15 místo původních 8 a vše uložit.
+
+### Generování i písmen
+
+Další věc, která by vás mohla zajímat je fakt, že cyklus nemusí generovat pouze čísla, ale lze do něj přidat i písmena. Stačí do proměnné characters přidávat za nulu písmena, která chcete. Jen bych dodal, že se nehodí mezi písmena dávat "O, G, L, l, i, I" atd. Tato písmena dělají zbytečný bordel, který není třeba!
+
+## Teď už je to opravdu všechno
+
+Snad se vám návod líbil. Ale jak jsem zmínil, dnes už CF7 nepoužívám. Lze vše řešit skrze Mautic, který má bilion výhod, téměř žádné limity, je zdarma a jen je složitější se s ním naučit.
+
+### Díky WP komunitě
+
+Velké díky patří Jaroslav Mitchi Mičan, který na základě tohoto příspěvku poslal zlepšovák!

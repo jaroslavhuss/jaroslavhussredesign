@@ -37,49 +37,50 @@ export const headerData = {
     },
     {
       text: 'Online marketing',
-      links: [
-        {
-          text: 'Základní kurz online marketingu',
-          href: getPermalink('/zakladni-kurz-online-marketingu/'),
-        },
-        {
-          text: 'Co je digitální marketing a jaké koncepty pod něj spadají',
-          href: getPermalink('/zakladni-kurz-online-marketingu/co-je-digitalni-marketing-a-jake-koncepty-pod-nej-spadaji/'),
-        },
+      href:"/zakladni-kurz-online-marketingu"
+      // links: [
+      //   {
+      //     text: 'Základní kurz online marketingu',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/'),
+      //   },
+      //   {
+      //     text: 'Co je digitální marketing a jaké koncepty pod něj spadají',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/co-je-digitalni-marketing-a-jake-koncepty-pod-nej-spadaji/'),
+      //   },
         
-        {
-          text: 'Rozdíl mezi tradičním marketingem a digitálním marketingem',
-          href: getPermalink('/zakladni-kurz-online-marketingu/rozdil-mezi-tradicnim-marketingem-a-digitalnim-marketingem/'),
-        },
-        {
-          text: 'Princip marketingové trojky – zahájení, integrace a opakování',
-          href: getPermalink('/zakladni-kurz-online-marketingu/princip-marketingove-trojky-zahajeni-integrace-a-opakovani/'),
-        },
-        {
-          text: 'Základní online kanály',
-          href: getPermalink('/zakladni-kurz-online-marketingu/zakladni-online-kanaly/'),
-        },
-        {
-          text: 'Metoda Smart',
-          href: getPermalink('/zakladni-kurz-online-marketingu/metoda-smart/'),
-        },
-        {
-          text: 'Jak správně vyjádřit svůj záměr v obsahu',
-          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-jak-spravne-vyjadrit-svuj-zamer-v-obsahu/'),
-        },
-        {
-          text: 'Správa komunity a tvorba obsahové strategie',
-          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-sprava-komunity-a-tvorba-obsahove-strategie/'),
-        },
-        {
-          text: 'Obsahový marketing – typy obsahu',
-          href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-typy-obsahu/'),
-        },
-        {
-          text: 'Online marketing – slovník pojmů',
-          href: getPermalink('/online-marketing-slovnik-pojmu/'),
-        },
-      ],
+      //   {
+      //     text: 'Rozdíl mezi tradičním marketingem a digitálním marketingem',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/rozdil-mezi-tradicnim-marketingem-a-digitalnim-marketingem/'),
+      //   },
+      //   {
+      //     text: 'Princip marketingové trojky – zahájení, integrace a opakování',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/princip-marketingove-trojky-zahajeni-integrace-a-opakovani/'),
+      //   },
+      //   {
+      //     text: 'Základní online kanály',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/zakladni-online-kanaly/'),
+      //   },
+      //   {
+      //     text: 'Metoda Smart',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/metoda-smart/'),
+      //   },
+      //   {
+      //     text: 'Jak správně vyjádřit svůj záměr v obsahu',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-jak-spravne-vyjadrit-svuj-zamer-v-obsahu/'),
+      //   },
+      //   {
+      //     text: 'Správa komunity a tvorba obsahové strategie',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-sprava-komunity-a-tvorba-obsahove-strategie/'),
+      //   },
+      //   {
+      //     text: 'Obsahový marketing – typy obsahu',
+      //     href: getPermalink('/zakladni-kurz-online-marketingu/obsahovy-marketing-typy-obsahu/'),
+      //   },
+      //   {
+      //     text: 'Online marketing – slovník pojmů',
+      //     href: getPermalink('/online-marketing-slovnik-pojmu/'),
+      //   },
+      // ],
     },
     {
       text:"Jak se naučit programovat",
