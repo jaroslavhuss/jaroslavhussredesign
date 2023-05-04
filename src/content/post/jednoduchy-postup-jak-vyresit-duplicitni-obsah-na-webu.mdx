@@ -1,0 +1,58 @@
+---
+publishDate: 2019-10-10T00:00:00Z
+title: Jednoduchý postup, jak vyřešit duplicitní obsah na webu.
+excerpt: V dnešním článku si vysvěltíme, jak vyřešit duplicitní obsah na webu pomocí Screaming Frogu 
+description: V dnešním článku si vysvěltíme, jak vyřešit duplicitní obsah na webu pomocí Screaming Frogu 
+image: ~/assets/images/posts/linuxdex/screaming-frog-1.png
+category: onlmarket
+readingTime: 3200
+---
+
+import ScreamingFrog from '~/assets/images/posts/linuxdex/ScreamingFrog.astro'
+import ScreamingFrog2 from '~/assets/images/posts/linuxdex/ScreamingFrog2.astro'
+
+Pokud jste se podívali do <a href="https://search.google.com/search-console/about" target="_blank" rel="nofollow">search console</a>, která vám v záložce "pokrytí" začla nadávat, že máte duplicitní obsah, ale ve skutečnosti duplicitní obsah nemáte, s nejvyšší pravděpodobností je chyba na straně http a https. Druhou nejčastější chybou je thin content, ale o tom někdy jindy. 
+
+## Jak honem zjistit, jestli mám nepořádek v přesměrování
+
+Duplicitní obsah vzniká špatně nastaveným přesměrováním z http na https. Tahle chyba vzniká zpravidla ve dvou případech:
+
+- Když převádíte web z http na https
+- Když jste si podělali .htaccess
+
+## A jak to zjistit?
+
+Nejjednoduší řešení, které jsem našel, je použití uřvané žáby – <a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank" rel="nofollow">screaming frog</a>. Screaming frog má verzi zdarma a je dostupná pro Windows i MacOS. Pro tyto účely nám stačí verze zdarma.
+
+Po instalaci se vám zobrazí následující okno.
+<ScreamingFrog />
+Ukázka z programu Screaming Frog.
+
+Základní okno webového seo pavouka – Screaming Frog
+Do plně prvního vstupní řádku stačí zadat vaše doménové jméno bez protokolu a www – prostě jen doménové jméno a kliknete na start. Já tam pro testové účely zadám jaroslavhuss.local
+
+To co vás nejvíce zajímá jsou první dva řádky a sloupec status code. Všechno, co má protokol „http“ (nikoliv https), musí mít status 301 – to znamená, že se jedná permanentní přesměrování.
+
+<ScreamingFrog2 />
+Výsledek Screaming Frog z webu jaroslavhuss.local
+
+Druhá věc, co musíte kouknout a projít, aby se vám nikde na webu neobjevil status code „302“ – jedná se dočasné přesměrování a Google to naprosto nenávidí.
+
+## Jak opravit zdvojený obsah na webu
+Když teď víme, jak sledovat stav našeho webu, je potřeba najít řešení.
+
+## Dělal jsem něco v htaccessu…
+Jestli že víte, že jste dělali něco v poslední době v htaccessu, tak vraťte změny do původního stavu a opět projeďte screaming frogem – zde to problém vyřešilo.
+
+## Nedělal jsem vůbec nic, prostě to furt háže 302…
+Kontaktujte svého hosting providera. Může se stát, že hosting sám vyžaduje pro https pár řádek kódu navíc v htaccessu, které jsou specifické pro samotný hosting. Buďte si jistý, že tento dotaz neřeší poprvé v životě.
+
+## Mám WordPress a už si nevím rady
+Pokud máte web postavený na WordPressu, může vám pomoci plugin jménem really simple ssl.
+
+## Když už nic nefunguje…
+Pokud ani tohle nepomohlo, s nejvyšší pravděpodobností je problém v htaccessu nebo je váš obsah opravdu duplicitní. Máte na výběr ze několika možností:
+
+## Obrátit se na specilistu
+Zeptat se internetu – nebo v nějaké příslušné FB skupině
+Předat tuhle problematiku vývojářům webu.
