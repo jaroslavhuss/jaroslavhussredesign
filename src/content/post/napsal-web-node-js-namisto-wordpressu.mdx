@@ -1,0 +1,55 @@
+---
+publishDate: 2019-02-19T00:00:00Z
+title: Jak jsem napsal web v Node.js namísto WordPressu… a zamiloval se!
+excerpt: Co je a co není Samsung Dex. Pro koho tento operační systém je a pro koho naopak není. Tato recenze je nejrozsáhlejší shrnutí na českém internetu vůbec!
+image: ~/assets/images/posts/node/node.png
+category: koderstvi
+readingTime: 3200
+tags:
+  - nodejs
+---
+import Node from '~/assets/images/posts/node/Node.astro';
+import SEO from '~/assets/images/posts/node/Seo.astro';
+import WebNodejs from '~/assets/images/posts/node/WebNodejs.astro';
+import WebZakaznika from '~/assets/images/posts/node/WebZakaznika.astro';
+
+Svůj volný čas věnuji z 50% na vzdělávání. V praxi to vypadá, že i během vaření jídla na další den sleduji oblíbené YT Channely nebo sosám rady z Udemy.com. A když se neučím, tak pracuji na vedlejších projektech. V posledních pár týdnech jsem dost sledoval vývoj v Node.js namísto WordPressu, ve kterém zpravidla všechny weby píšu, proto, když přišla příležitost, riskl jsem jít cestou Node.js.
+
+
+## Jardo, potřebujeme asap web
+
+Vlastně se to stalo včera, kdy ke mně nacupitala kolegyně a urgentně potřebovala udělat web. Předlohou byla zahraniční verze běžící na WordPressu, takže úkolem bylo web jenom překopírovat.
+
+## Předloha byla na programování jednoduchá... co kdybych nešáhl po wordpressu?!
+
+Když jsem se podíval do Lighthousu předlohy, trošku jsem se zděsil. Web ležel v rámci výkonu v červených číslech a díky zkušenostem s Wordpressem vím, jak je strašně jednoduché do červených čísel spadnout. Takže jsem autora nemohl obvinit vůbec z ničeho - takhle to prostě má spousta webů. Jenže rychlost je pro Google důležitá a co víc - pro koncového uživatele dvojnásob. Web neměl žádné komplikované prvky, které bych v JS nevěděl naprogramovat - byla to jasná volba.
+
+<WebZakaznika />
+
+Navíc - při představě, že stáhnu šablonu, budu ji dva dny čistit, potom řešit likvidaci zbytečných pluginů a další spoustu věcí, bylo rozhodnutí ve prospěch Node.js silnější a silnější.
+
+## Bleskový vývoj v node.js
+
+Vývoj mi zabral den a půl pracovní doby. Pomohl jsem si Bootstrapem, protože "ain't nobody got time for that" a hlavně tolik opěvovaný flex s gridem nemají (a nebudou) podporu v IE (12% trafficu na našich webech tvoří děsivě IE).
+
+Na oplátku mi vyšla v lighthousu tahle čísla (a to jsem nedělal zpětnou optimalizaci, PWA, kešování, a další haldu kravinek, které si nechávám těsně před finálním deployem - takže budu všude v zelených číslech určitě). A ruku na srdce, optimalizace výkonu, accessibility i SEO bude ve skutečnosti v Node.js mnohem snazší. (web na Node.js funguje na 99% úplně stejně, jako jeho Wordpressová předloha).
+
+<WebNodejs />
+
+Když jsem se podíval na rychlost webu, první co mi svitlo hlavou bylo "Sakra! Kéž by mě tehdy kluci z STRV vybrali na Node.js nights - teď už jsem to tam mohl sekat jak vzteklý! :-)"
+
+## A co SEO?
+
+Pokud děláte s WP, určitě znáte SEO by Yoast. Pro každou stránku nastavujete klíčové slovo, meta description atd. Jak těžké tohle může být v Node.js?
+
+<SEO />
+
+## Vlastně je to ještě snazší...
+
+Psaní on-page SEO je v Node.js vlastně ještě rychlejší, protože máte všechny routes přehledně přímo před očima. K routes pak už stačí jen přidat objekt se SEO atributy, který se pak propisuje v šabloně.
+
+## Budoucnost webů vidím teď trošku jinak
+
+WordPress je fantastická věc! Jsou typy webů, pro které bych rozhodně po Node.js nešáhl (jako ten příklad s e-shopem). Ale možná jsem už WordPressem znuděný. Ten čas strávený s Node.js byl nejenom extrémně zábavný, ale zároveň mi to všechno dávalo smysl. Orientovat se ve vývoji mi přišlo snazší a rychlejší než klikat ve Wordpressu a pak stejně sklouznout k editacím jádra šablony.
+
+Možná se vyplatí vytvořit si malé Node.js CMS, komunikující s Firebase a front-end nechat buď na skvělém EJS nebo Reactu... Pro příspěvky si napsat vlastní malou FE aplikaci, která bude ukládat všechno do JSONu a na backendu volat JSON.
