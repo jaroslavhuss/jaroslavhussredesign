@@ -1,0 +1,98 @@
+---
+publishDate: 2017-03-17T00:00:00Z
+title: Úvod do Mauticu
+excerpt: U Mauticu s oblibou všem říkám, že je to pro uživatele strašně jednoduchý systém. Jeho přehlednost je geniálně vymyšlena. Má své mouchy, ale o tom později..
+image: ~/assets/images/posts/mautic_logo.jpeg
+category: mautic
+readingTime: 10
+tags:
+  - ostatni
+---
+
+Když jsem začínal s Wordpressem, bylo mi jedno, kolik tam mám pluginů, jak moc je web rychlý a celkově jsem při tvorbě webu nemyslel moc dopředu. Čím více jsem si ale s WP hrál, tak jsem zjišťoval, že méně znamená více a prostě není nad to, když si člověk udělá čístý web napojený na velmi inteligentní automatizaci.
+
+Ano, mohu použít ve Wordpressu Mailpoet, který umí rozesílat emaily a velmi omezenou automatizaci také zvládne. Ale proč bych to dělal? Proč cpát do systému něco, co může být oddělené, je to k tomuto účelu přímo určené a je to zdarma?
+
+## Mautic - těžko na cvičišti, lehko na bojišti
+
+U Mauticu s oblibou všem říkám, že je to pro uživatele strašně jednoduchý systém. Jeho přehlednost je geniálně vymyšlena. Mohu třeba porovnat s placenou konkurencí Silverpop, které nemohu stále přijít na chuť a ve srovnání s UI za mě definitivně Mautic vyhrává. Podle mě bych Mautic z hlediska uživatele přirovnal k hlášce "kouknu a vím".
+
+V čem je ale tedy kámen úrazu? Proč není třeba v ČR pořád Mautic tolik rozšířený? Z mých zkušeností je to díky dvěma hlavním důvodům.
+
+## Mautic je dost složité nakonfigurovat
+
+Mautic se tak strašně rychle vyvíjí, že na něj neexistuje taková návodová základna, jakou má například WP
+
+### O cronech
+
+První bod se dá přežít, ale je to běh po hrbolaté cestě. Vyzdvihnu problém číslo jedna a dle mého hlavní problém, proč spousta zájemců pohoří. Problém se nazývá "Cron Jobs" a celý průšvih spočívá v tom, že co hosting, to trošku jiná definice Cronů.
+
+(Cron si představme jako robota, kterému řekneme - hele, každou sekundu udpatni data v segmentu/kampani atd. Jedná se o požadavek na server, který na základě data a času spouští určité scripty systému)
+
+Moje Mautic klientská základna je v této chvíli (9.3.2017) stále malá. Měl jsem tu čest zatím nastavovat Crony na webhostingu Wedosu a na webhostingu Profitux. Po těchto zkušenostech opravdu mohu potvrdit, že v obou případech se crony nastavovali podobně, ale prostě trošku jinak. Dokonce v případě Profituxu museli pozměnit kvůli mě regulární výrazy v cestě Cronu.
+
+Cronům věnuji celý jeden návod, takže tohle zde jen na úvod.
+
+### O častých updatech
+
+Na druhý problém jsem byl poprvé upozorněn díky naší FB české komunitě (doporučuji se tam přidat). Faktem je, že nejsem první a ani poslední, kdo se o návod na Mautic pokusil. Jenže časté updaty jsou proti nám pisatelům! Jeden update může absolutně změnit layouty, položky či celou jednu funkcionalitu.
+
+V praxi by to asi vypadalo takhle. Pro českou komunitu překládám oficiální dokumentaci Mauticu. Chápu, že ne každý umí anglicky a hlavně každému se v jeho mateřštině zkrátka dobře pochopí daná problematika. Jenže se podívejte, jak už je dokumentace velká! A jeden update může toho změnit tak strašně moc, že správa takových textů je nadmíru obtížná!
+
+Začínám přemýšlet ale nad tím, že vytvořím sdílený google doc, který bude volně ke čtení a pro určité lidi i k úpravám (zejména pro lidi v Mautic FB komunitě).
+
+Tak či onak - u Mauticu je problém, že když se něco naučíte, druhý den to může být úplně jiné a to je prostě problém, protože to bere čas, který je v dnešní době nejklíčovější faktor. 
+
+## Mautic má ale výhody, pro které je bezkonkurenčně nejlepší!
+
+Než začnu vyzdvihovat tento systém na automatizaci, je důležité zmínit, že přede mnou stojí dva dost náročné projekty, pro které jsem zvolil Mautic a díky kterým sem se s Mauticem začal učit. Ruku na srdce, neznám Mautic tolik, jako kluci z komunity na FB. Jmenovitě se jedná o tyto lidi:
+
+- Jan Linhart
+- Zdeno Kuzmany
+
+Na druhou stranu, tento návod půjde s vývojem a realizací výše zmíněných projektů, takže jestli něco teď v tuto chvíli o Mauticu nevím, tak ve chvíli, kdy vyjde další návod, to jistě vědět nebudu. Proč to říkám? Protože má Mautic bambilion výhod, o kterých třeba teď nevím, takže mě omluvte, pokud nezmíním vše.
+
+## Cena
+
+Nelze jinak, než ji dát jako prvního kandidáta v rozhodovacím procesu vybírání systému automatizace. Kolik stojí základní realizace Mauticu?
+
+Jako odesílací server mám nastavený Elastic Email (díky Zdeno za super návod), který je do 150 000 emailů měsíčně zdarma!
+
+Dále Mautic umí posílat sms a pokud si dobře vzpomínám, stála sms 0,70kč za jednu smsku. Zde napíšu návod.
+
+Celkově tedy stojí Mautic se vším všudy okolo 500kč ročně v samotném jeho základu.
+
+## Uživatelsky jednoduchý
+
+"Ty jo, to je přehledný!" - to byla moje první myšlenka, která mě napadla, když jsem Mautic nainstaloval. Jestli si říkáte - tak to je jedno, jestli je to přehledný nebo ne, hlavně že to funguje. Pravda v tom je, ale... Dojde na den, kdy budete muset klienta učit v Mauticu chodit. Je třeba si uvědomit, že ne každý je zvyklý na tento typ systémů a věřím, že nezasvěcený člověk při pohledu do Silverpopu zpanikaří.
+
+U Mauticu tomu tak není! Má podobný layout jako Wordpress (a na něj je už opravdu zvyklý kde kdo). Zároveň Mautic umí definovat role, podle kterých se mu zobrazí jen určité části Mauticu a v tom je veliká výhoda, protože to lidi nemate, systém jim přijde čistější a snazší.
+
+Zároveň i pro samotného administrátora systému, který nastavuje kampaně, tvoří formuláře, připravuje emaily s personalizací. Sám mohu říci, že zvykání si na Mautic jde tak nějak automaticky, rychle a snadno.
+
+## Dvě verze na výběr
+
+Mautic můžete mít buď hostovaný a nebo přímo u sebe na hostingu. V tomto případě je to podobné opět jako Wordpress. Placená verze Mauticu běží na .com a ta neplacená, kdy je potřeba vlastní hosting, běží na .org. Záleží, co vám vyhovuje více. Placená verze obejde záludnosti jménem Crony, ale stojí už nějaké typeníze. Neplacená verze má výše zmíněné nevýhody a také výhody.
+
+Upřímně bych rád tyto dvě verze mezi sebou porovnal, ale já jsem zkrátka fanda Opensource, takže se do cloudové verze .com nehrnu a nemám o ní žádné relevantní informace.
+
+## Pokročilé funkce
+
+Mautic je určen pro širokou veřejnost. Dle mého názoru zvládne malou i střední firmu. Je to hlavně díky tomu, že vývojáři přidávají nové a nové funkce, které se čím dál tím více přibližují Silverpopu. Upřímně, kdybych si měl vybrat, jdu určitě do Mauticu (verze 2.7.0), protože umí toho už tolik, aby se mohl Silverpopu s poklidem postavit!
+
+## Je rychlý
+
+Když jsem pracoval se Silverpopem po tom, co jsem už poznal Mautic, uvědomil jsem si jednu věc. Mautic je rychlejší. Je o dost rychlejší, neseká se a jede plynule. Se Silverpopem jsem se dost nepříjemně načekal. Jediná věc, která mi momentálně v Mauticu trošku dělá vrásky je import kontaktů, který dost nebezpečně trvá. Zpětně jsem importoval 800 kontaktů "csvéčkem" a povedlo se mi to asi až na pátý pokus. Holt člověk musí s Mauticem hodně zkoušet. Zde bych ještě citoval Petra Mišáka, který tyhle starosti s Mauticem vystihl výrokem:
+
+## "S mauticem je to jako když zavřeš oči a běžíš lesem"
+
+Zde bych snad jen poznamenal, že tento výrok řekl v době, kdy vyšel Mautic 2.0.0.
+
+## Závěr
+
+Je toho více. Je toho mnohem více a stojí přede mnou ohromné množství práce, které ale nebudu uspěchávat. Rád bych tento návod psal podle původního plánu - dostanu projekt, vyřeším ho Mauticem a budu ho poctivě dokumentovat tímto návodem.
+
+## Důležité odkazy
+- <a href="https://github.com/mautic/mautic" target="_blank" rel="nofollow">Mautic Github</a>
+- <a href="https://www.facebook.com/groups/953588998063936/?fref=ts" target="_blank" rel="nofollow">FB Skupina</a>
+- <a href="https://docs.mautic.org/en" target="_blank" rel="nofollow">Mautic dokumentace</a>
