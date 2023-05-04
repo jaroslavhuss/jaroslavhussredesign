@@ -1,0 +1,90 @@
+---
+publishDate: 2019-07-09T00:00:00Z
+title: Linux on Dex – kapesní server úplně všude
+excerpt: Kapesní Linux server nebo počítač vždy po ruce? S Linux on dex je to hračka. V tomto článku se podíváme na to, jak si nainstalovat Linux on Dex a jak jej používat.
+description: Kapesní Linux server nebo počítač vždy po ruce? S Linux on dex je to hračka. V tomto článku se podíváme na to, jak si nainstalovat Linux on Dex a jak jej používat.
+image: ~/assets/images/posts/linuxdex/linux-on-dex-plocha.jpg
+category: samsung-dex
+readingTime: 10
+tags:
+  - ostatni
+---
+import Linux1 from  '~/assets/images/posts/linuxdex/Linux1.astro'
+import Linux2 from  '~/assets/images/posts/linuxdex/Linux2.astro'
+import Linux3 from  '~/assets/images/posts/linuxdex/Linux3.astro'
+
+Samsung dělá nás "hračičky" opravdu poslední dobou šťastnými. Mně osobně tak šťastným, že se opět musím podělit o zkušenost, kdy si můžete s sebou tahat kapesní server a pustit si Linux prakticky úplně všude. Nejdříve ale malá ukázka toho, o co mi jde.
+
+<Linux2/>
+
+- Číslo jedna je běžící Linux na Samsung Galaxy S9. Pomocí vncserveru hostuje telefon na své ip adrese Ubuntu.
+- Číslo dva ukazuje již připojený notebook na vncserver - tedy na můj telefon. Na telefonu jsem pustil react-app server. Ten běží opět na ipadrese telefonu s portem 3000.
+- Číslo tři ukazuje iPad, který zobrazuje výsledek create-react-app
+
+## Jak na to?
+
+Moc toho potřeba není. V základu je potřeba vlastnit cokoliv z řady Samsung Galaxy s9 a vyšší (s9,s9+,s10 atd.). Potom je potřeba zprovoznit Linux on Dex. Je k tomu oficiální web a instalace Ubuntu na Samsungu je super jednoduchá.
+
+## Po instalaci linux on dex
+
+Kdybyste měli s sebou dokovací stanici na telefon (DexStation), není co řešit - propojíte si monitor, klávesnici a myš a můžete vesele drandit na Ubuntu přímo ze svého telefonu. Občas ale přijde situace, kdy máte úplně všechno, jenom ne tu dokovací stanici a prostě si chcete pustit vývojové prostředí (nejenom) z telefonu. (Máte tam třeba svůj celý lokální Wordpress, na kterém blbnete, nebo nepushnuté změny z gitu).
+
+Každopádně pomocí vnc4serveru si můžete vytvořit remote připojení prakticky pro kohokoliv, kdo je na stejné síti.
+
+## Instalujeme vnc4server do ubuntu
+
+Instalace je jednoduchá. Otevřete na svém telefonu Linux On dex a spusťte terminál (samotné ubuntu bez monitoru nepustíte). Do terminálu napiště tento kód:
+
+
+```bash
+sudo apt-get install vnc4server
+```
+
+## Servere jeď
+
+Když máme vnc nainstalovaný, můžeme ho teď spustit
+
+```bash
+vnc4server :0 -geometry 1920x1080
+```
+
+Ubuntu se vám pustit v rozlišení 1920x1080 - tuto hodnotu si můžete změnit dle potřeba.
+
+## Připojení ke vzdálenému linuxu
+
+Nyní si v závislosti na vašem zařízení, na kterém makáte, musíte stáhnout vncviewer. Já osobně používám vncviewr addon pro chrome.
+
+<Linux3 />
+
+Aplikace po vás bude chtít ip adresu zařízení. To zjistíte, když v terminálu napíšte
+```bash
+ifconfig
+```
+Pak se vás aplikace zeptá na heslo. V současné době je to:
+```bash
+secret
+```
+A hurá - nyní máte svůj telefon plnně pod kontrolou.
+
+<Linux1 />
+
+## Nejhorší je za námi - pusťme si react server
+
+Teď už je to jednoduché a postup je následující
+
+```bash
+git clone url-repozitare
+cd projekt
+npm install
+npm start
+```
+
+Já dělám reactí blbosti pro iPad, takže si v iPadu napíši do Safari IP adresu zařízení (pokud jste zapomněli, tak opět ifconfig) s portem 3000.
+
+## Není to prostě super?
+
+Těch usecase, kdy tohle využít je opravdu hodně. Kdybych to měl hodně zestručnit, máte k dispozici Visual studio code (code-oss) node.js, python, apache atd.
+
+Zároveň máte k dispozici i Gimp a další nástroje, které z "pitomého" telefonu dělají zajímavou zbraň na kód :-)
+
+To je vše - kdybyste se chtěli na cokoliv doptat, tak zde v komentářích nebo jaroslav.huss@gmail.com
