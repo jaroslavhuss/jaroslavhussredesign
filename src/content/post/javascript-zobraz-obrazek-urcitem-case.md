@@ -2,6 +2,7 @@
 publishDate: 2016-11-27T19:07:38+01:00
 title: Javascript - zobraz obrázek v určitém čase
 excerpt: Zobrazení obrázku javascriptem v určitém dni, hodině a minutě. Jednoduchý javascript, ve kterém si můžete pohodlně měnit, kdy se má co zobrazit.
+description: Zobrazení obrázku javascriptem v určitém dni, hodině a minutě. Jednoduchý javascript, ve kterém si můžete pohodlně měnit, kdy se má co zobrazit.
 image: ~/assets/images/javascript-zobraz-obrazek.png
 category: koderstvi
 readingTime: 10
