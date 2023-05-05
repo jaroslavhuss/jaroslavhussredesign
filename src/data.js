@@ -18,10 +18,6 @@ export const headerData = {
           href: getPermalink('/kategorie/koderstvi'),
         },
         {
-          text: 'Nezařazené',
-          href: getPermalink('/kategorie/nezarazene'),
-        },
-        {
           text: 'Online marketing',
           href: getPermalink('/kategorie/onlmarket'),
         },
