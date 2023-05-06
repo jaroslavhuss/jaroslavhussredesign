@@ -35,7 +35,11 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    sitemap(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date('2023-02-24'),
+    }),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',
     }),

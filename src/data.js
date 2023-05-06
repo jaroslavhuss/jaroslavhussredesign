@@ -93,7 +93,7 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/o-cookies') },
+    { text: 'O cookies', href: getPermalink('/o-cookies') },
   ],
   socialLinks: [
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/jaksenaucitprogramovat' },
