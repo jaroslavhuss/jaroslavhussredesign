@@ -21,7 +21,7 @@ const whenExternalScripts = (items = []) =>
 export default defineConfig({
   site: SITE.origin,
   base: SITE.basePathname,
-  trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+  trailingSlash: "always",
 
   output: 'static',
 
@@ -38,7 +38,7 @@ export default defineConfig({
     sitemap({
       changefreq: 'weekly',
       priority: 0.7,
-      lastmod: new Date('2023-02-24'),
+      lastmod: new Date('2023-10-05'),
     }),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',

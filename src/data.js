@@ -15,25 +15,25 @@ export const headerData = {
         },
         {
           text: 'Kodérství',
-          href: getPermalink('/kategorie/koderstvi'),
+          href: getPermalink('/kategorie/koderstvi/'),
         },
         {
           text: 'Online marketing',
-          href: getPermalink('/kategorie/onlmarket'),
+          href: getPermalink('/kategorie/onlmarket/'),
         },
         {
           text: 'Osobní',
-          href: getPermalink('/kategorie/osobni'),
+          href: getPermalink('/kategorie/osobni/'),
         },
         {
           text: 'Wordpress',
-          href: getPermalink('/kategorie/wp'),
+          href: getPermalink('/kategorie/wp/'),
         }
       ]
     },
     {
       text: 'Online marketing',
-      href:"/zakladni-kurz-online-marketingu"
+      href:"/zakladni-kurz-online-marketingu/"
     },
     {
       text:"Jak se naučit programovat",
@@ -93,7 +93,7 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'O cookies', href: getPermalink('/o-cookies') },
+    { text: 'O cookies', href: getPermalink('/o-cookies/') },
   ],
   socialLinks: [
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/jaksenaucitprogramovat' },
