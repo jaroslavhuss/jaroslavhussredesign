@@ -1,0 +1,34 @@
+---
+publishDate: 2024-02-27T12:43:00Z
+title: Oblíbená služba Netlify vyúčtovala 105 tisíc dolarů za statický web. Jak z ní odejít?
+excerpt: Představte si, že máte statický osobní blok, za který vám najednou přijde faktura na 105 tisíc dolarů. To se stalo jednomu vývojáři, který si na Netlify hostoval svůj web. Jak se to mohlo stát a jak takovou situaci řešit?
+description: Představte si, že máte statický osobní blok, za který vám najednou přijde faktura na 105 tisíc dolarů. To se stalo jednomu vývojáři, který si na Netlify hostoval svůj web. Jak se to mohlo stát a jak takovou situaci řešit?
+image: ~/assets/images/vystraseny_sw_developer.png
+category: svet-software
+readingTime: 10
+tags:
+  - programovani
+  - aktuality
+---
+
+Vývojářskou komunitou otřásl <a href="https://www.reddit.com/r/webdev/comments/1b14bty/netlify_just_sent_me_a_104k_bill_for_a_simple/?share_id=FehyTm0vx9J1PteYtm1cj&utm_content=1&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1" rel="noopener nofollow" target="blank">Reddit příspěvek</a> z 27.února, ve kterém jeden z vývojářů sdílel svou zkušenost s Netlify, jež je oblíbenou službou pro hostování statických webů. Vývojář, který si na Netlify hostoval svůj web, najednou obdržel fakturu na 105 tisíc dolarů. Jak se to mohlo stát a jak takovou situaci řešit?
+
+## Netlify nemá limit na bandwidth
+
+Po přihlášení do služby Netlify čekalo vývojáře s nickem liubanghoudai24 účtu opravdu nepříjemné překvapení. Našel tam totiž fakturu na 105 000$, jelikož jeho malý statický web přesáhl limit přenosu dat. Ne že by jeho web byl tak populární, ale stal se obětí DDoS útoku, jež jeho web ždímal celé 4 dny a částka za spotřebu dat se tak vyšplhala na astronomických 105 tisíc dolarů.
+
+## Mrtví agenti útočili
+
+Dle podpory se dozvěděl, že se jednalo o "ancient agents", tedy archaické sw agenty, které se zaměřili na jeho .mp3 soubor, jež byl součástí jeho statického webu. Díky neustálému stahování tohoto souboru se tak jeho web dostal do problémů. Záměrně píši archaické agenty, protože zabezpeční Netlify s něčím takovým nepočítalo a jejich algoritmus nedokázal takový útok zastavit, jelikož to nezapadalo do běžného DDos útoku.
+
+## Co následovalo, byla noční můra
+
+Vývojář liubanghoudai24 se ihned obrátil na technickou podporu služby Netlify, která mu pokutu zmírnila na absurdních 5 000 dolarů.
+
+## Jak se bránit?
+
+Celou komunitu situace s Netlify vyděsila. Aby tak populární služba neměla limit na free-tier a dovolila útočníkům způsobit takovou škodu, je alarmující. Osobně si myslím, že kdyby si Netlify chtělo takhle vydělávat peníze, tak by jim opravdu stačilo útočit na weby svých zákazníků a ždímat je jak ručník (tím neříkám, že se to stalo). Považuji takový byznys model za naprosto nemorální a dle Redditu a Hackernews to vypadá, že Netlify čeká masový exodus zákazníků.
+
+## Kam ale jít?
+
+Pokud se chcete vyhnout podobné situaci, doporučuji se podívat na <a href="https://www.cloudflare.com/" rel="noopener nofollow" target="blank">Cloudflare</a>, který má limit na free-tier a je také oblíbeným nástrojem pro hostování statických webů. Na samotném Redditu se pak můžete dočíst, že absolutní majorita právě přechází na Cloudflare.
